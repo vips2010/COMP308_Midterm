@@ -3,9 +3,276 @@
 <head>
     <meta charset="utf-8" /> 
     <meta name="viewport" content="width=device-width,intial-scale=1.0,user-scalable=no" />
-    <title>COMP 308</title>
+    <title>COMP 308 VIPUL MIDTERM </title>
+
+    <!-- CSS Section -->
+    <link href="Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="css/a.min.css" rel="stylesheet" />
+    <link href="css/myapp.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Home Page Wrapper -->
+    <div data-role="page" data-control-title="home" id="home">
+    <div data-theme="a" data-role="header">
+        <span class="ui-title">
+        </span>
+        <div style="width: 100%; height: 60%;  background-color: #fbfbfb; "
+        data-controltype="image" id="img1">
+        <center> <img src="Content/images/logo.jpg" alt="image" style="position:absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px"></center>
+        </div>
+         <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#home" data-transition="flip" data-theme="" data-icon="home">    Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#survey" data-transition="flip" data-theme="" data-icon="star">
+                        Survey
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" data-transition="flip" data-theme="" data-icon="info">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+         <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+    <div data-role="content">
+        <div id="img2">
+            <center>  
+              <img src="Content/images/ColourWheel.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px"> 
+          </center>
+        </div>
+    </div>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            &copy;CopyRight 2015
+        </h3>
+    </div>
+</div>
+    <!-- Survey Page -->
+    <div data-role="page" data-control-title="survey" id="survey">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Survey
+        </h3>
+        <center>
+        <div style="width: 100%; height: 60%;  background-color: #fbfbfb; "
+        data-controltype="image">
+            <img src="Content/images/logo.jpg" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div>
+            </center>
+         <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="flip" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#survey" data-transition="flip" data-theme="" data-icon="star">
+                        Survey
+                    </a>
+                </li>
+                <li>
+                    <a href="#survey" data-transition="flip" data-theme="" data-icon="info">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <form action="">
+            <div data-role="fieldcontain" data-controltype="radiobuttons">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        1. You prefer to keep your appearance:
+                    </legend>
+                    <input id="radio1" name="" value="radio1" type="radio">
+                    <label for="radio2">
+                        A. Functional
+                    </label>
+                    <input id="radio2" name="" value="radio1" type="radio">
+                    <label for="radio6">
+                        B. Fashionable
+                    </label>
+                    <input id="radio7" name="" value="radio1" type="radio">
+                    <label for="radio7">
+                        C. Casual
+                    </label>
+                    <input id="radio8" name="" value="radio1" type="radio">
+                    <label for="radio8">
+                        D. Conservative
+                    </label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain" data-controltype="radiobuttons">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        2. What types of goals do you set for yourself?
+                    </legend>
+                    <input id="radio9" name="" value="radio2" type="radio">
+                    <label for="radio9">
+                        A. Challenging Goals
+                    </label>
+                    <input id="radio10" name="" value="radio2" type="radio">
+                    <label for="radio10">
+                        B. I don’t Set Goals
+                    </label>
+                    <input id="radio11" name="" value="radio2" type="radio">
+                    <label for="radio11">
+                        C. Short-­‐Term Goals
+                    </label>
+                    <input id="radio12" name="" value="radio1" type="radio">
+                    <label for="radio12">
+                        D. Long-­‐Term Goals
+                    </label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain" data-controltype="radiobuttons">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        3. Your optimal work environment is:
+                    </legend>
+                    <input id="radio13" name="" value="radio3" type="radio">
+                    <label for="radio13">
+                        a. Busy &amp; Efficient
+                    </label>
+                    <input id="radio14" name="" value="radio3" type="radio">
+                    <label for="radio14">
+                        b. Stimulating &amp; Social
+                    </label>
+                    <input id="radio15" name="" value="radio3" type="radio">
+                    <label for="radio15">
+                        c. Relaxed &amp; Friendly
+                    </label>
+                    <input id="radio16" name="" value="radio3" type="radio">
+                    <label for="radio16">
+                        d. Structured &amp; Organized
+                    </label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain" data-controltype="radiobuttons">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        4. When given a high-­‐profile task you focus on:
+                    </legend>
+                    <input id="radio17" name="" value="radio4" type="radio">
+                    <label for="radio17">
+                        a. Getting the job done
+                    </label>
+                    <input id="radio18" name="" value="radio4" type="radio">
+                    <label for="radio18">
+                        b. Networking with others
+                    </label>
+                    <input id="radio19" name="" value="radio4" type="radio">
+                    <label for="radio19">
+                        c. Maintaining relationships
+                    </label>
+                    <input id="radio20" name="" value="radio4" type="radio">
+                    <label for="radio20">
+                        d. Following the Process
+                    </label>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain" data-controltype="radiobuttons">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        5. Which situation do you dislike the MOST?
+                    </legend>
+                    <input id="radio21" name="" value="radio5" type="radio">
+                    <label for="radio21">
+                        a. Losing control
+                    </label>
+                    <input id="radio22" name="" value="radio5" type="radio">
+                    <label for="radio22">
+                        b. Being excluded
+                    </label>
+                    <input id="radio23" name="" value="radio5" type="radio">
+                    <label for="radio23">
+                        c. Being devalued
+                    </label>
+                    <input id="radio24" name="" value="radio5" type="radio">
+                    <label for="radio24">
+                        d. Being unprepared
+                    </label>
+                </fieldset>
+            </div>
+            <input type="submit" data-icon="forward" data-iconpos="right" value="Submit">
+        </form>
+        
+    </div>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            &copy;CopyRight 2015
+        </h3>
+    </div>
 
+</div>
+
+    <!-- Contact Page -->
+    <div data-role="page" data-control-title="contact" id="contact">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Contact Me
+        </h3>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="flip" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#survey" data-transition="flip" data-theme="" data-icon="star">
+                        Survey
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" data-transition="flip" data-theme="" data-icon="info">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <form action="">
+            <div data-role="fieldcontain" data-controltype="textinput">
+                <input name="" id="textinput2" placeholder="Enter Your Name" value=""
+                type="text">
+            </div>
+            <div data-role="fieldcontain" data-controltype="textinput">
+                <input name="" id="textinput3" placeholder="Enter Your Email Address"
+                value="" type="email">
+            </div>
+            <div data-role="fieldcontain" data-controltype="textarea">
+                <textarea name="" id="textarea1" placeholder="Enter Your Message"></textarea>
+            </div>
+            <input type="submit" data-icon="gear" data-iconpos="left" value="Submit">
+
+        </form>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+             &copy;CopyRight 2015
+        </h3>
+    </div>
+</div>
+
+    <!-- Dialog Page -->
+
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-1.8.3.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="Scripts/myapp.js"></script>
 </body>
 </html>
